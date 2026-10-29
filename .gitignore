@@ -1,0 +1,52 @@
+# --- Font software ---------------------------------------------------------
+# Never commit font files. Distributing them would itself raise the licence
+# questions this project discusses.
+*.otf
+*.ttf
+*.ttc
+*.woff
+*.woff2
+*.eot
+*.pfb
+*.pfm
+*.afm
+*.dfont
+*.fon
+*.fnt
+
+# --- Evidence and client material -----------------------------------------
+# Real evidence belongs in access-controlled storage, not in a public repo.
+evidence/
+working-files/
+private/
+*.eml
+*.msg
+*.har
+
+# Exported archives and disk images
+*.zip
+*.7z
+*.rar
+*.dmg
+*.iso
+
+# --- Office lock files and temporary files ---------------------------------
+~$*
+*.tmp
+*.bak
+*.swp
+*~
+
+# --- Operating system files ------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editors ---------------------------------------------------------------
+.vscode/
+.idea/
+
+# --- Secrets ---------------------------------------------------------------
+.env
+*.pem
+*.key
