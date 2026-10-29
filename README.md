@@ -2,132 +2,135 @@
 
 **A Simulated Legal Review of Multi-Channel Font Usage**
 
-> **Read this first.** This is a student research project built around a **fictional** company, NovaWear. No real client, audit, engagement or dispute exists. The author has no affiliation with Monotype Imaging Inc., MyFonts or any font foundry. Nothing here is legal advice, and nothing here states that any real company or product is compliant or non-compliant.
+> **Read this first.** This is a student research project built around a fictional company, NovaWear. No real client, audit, engagement or dispute exists. The author has no affiliation with Monotype Imaging Inc., MyFonts or any font foundry. Nothing here is legal advice, and nothing here states that any real company or product is compliant or non-compliant.
 
 ---
 
-## 1. The business problem
+## 1. The Business Problem
 
-Fonts are software. A brand that uses a typeface on its packaging, website, app, advertising and internal decks may be relying on several different permissions. Monotype, for example, describes separate desktop, web, application, digital ad, e-publication, embedded and server licences, and its current terms measure each channel differently (by user, page view, registered app user or ad impression). A licence bought for one channel does not automatically cover another.
+Fonts are software, and commercial font licences may grant different permissions for desktop, web, application, advertising, e-publication, embedding and server use. The permitted use and applicable limits depend on the actual licence terms.
 
-NovaWear, a fictional Indian apparel brand, uses three fonts across eight channels. When asked, it could not produce an executed licence, an order form, a purchase record, a font inventory or installation records. This repository shows how a preliminary legal review would approach that situation: what can be said now, what cannot, what evidence to request, and which questions matter most.
+NovaWear, a fictional Indian apparel brand, uses three fonts across eight channels. In the hypothetical scenario, it cannot produce an executed licence, order form, purchase record, font inventory or installation records.
+
+This project demonstrates how a preliminary legal review could approach that situation: what can be established from available information, what remains uncertain, what evidence should be requested, and which questions require priority attention.
 
 ## 2. Objectives
 
-1. Map each channel where NovaWear uses fonts to the type of permission that channel would normally need.
-2. Test each use against licence provisions that were actually located and read, without assuming those provisions govern NovaWear.
-3. Separate verified source text, interpretation, hypothetical facts, assumptions, open questions and recommendations.
-4. Prioritise follow-up work and set out an evidence-collection and remediation sequence.
-5. Produce reusable templates (use-case matrix, evidence register, findings register, licence verification checklist).
+1. Map each channel where NovaWear uses fonts to the permissions that may be relevant.
+2. Compare hypothetical uses against located licence provisions without assuming those provisions govern NovaWear.
+3. Distinguish source text, legal interpretation, hypothetical facts, assumptions, open questions and recommendations.
+4. Prioritise follow-up work, evidence collection and potential remediation.
+5. Develop reusable templates for use-case mapping, evidence tracking, findings and licence verification.
 
-## 3. Repository contents
+## 3. Repository Contents
 
-```
+```text
 font-licensing-digital-asset-compliance-audit/
-├── README.md                                  This file
-├── LICENSE                                    Terms for reusing this repository
-├── .gitignore                                 Excludes font files, evidence and local clutter
+├── README.md
+├── LICENSE
+├── .gitignore
 ├── docs/
-│   ├── executive-summary.md                   Two-page summary for a supervising lawyer
-│   ├── preliminary-audit-report.md            Full use-case analysis (A–I method)
-│   ├── clause-by-clause-review.md             Provisions actually located, with pinpoint citations
-│   ├── methodology.md                         Review framework, priority scale, review vs audit
-│   ├── evidence-and-documentation-guide.md    Collecting and preserving evidence
-│   ├── remediation-plan.md                    Phased plan, from evidence collection to escalation
-│   ├── limitations-and-assumptions.md         What this project does not and cannot establish
-│   └── sources-and-research-log.md            Every source, its version, date and use
+│   ├── preliminary-audit-report.md
+│   ├── methodology.md
+│   └── sources-and-research-log.md
 ├── templates/
-│   ├── use-case-matrix.csv                    One row per channel (UC-01 to UC-08)
-│   ├── evidence-register.csv                  Evidence received and requested (EV-01 to EV-17)
-│   ├── findings-register.csv                  Findings and priorities (FND-01 to FND-10)
-│   └── licence-verification-checklist.md      Questions to answer from the actual licence
+│   ├── use-case-matrix.csv
+│   ├── evidence-register.csv
+│   ├── findings-register.csv
+│   └── licence-verification-checklist.md
 └── portfolio/
-    └── cv-entry.md                            Short CV description of the project
+    └── cv-entry.md
 ```
 
-## 4. Review framework
+The original root-level copies of some documents may remain in the repository while the folder structure is being organised. The files listed above are the intended organised locations.
 
-### Reference licence frameworks
+## 4. Reference Licence Frameworks
 
-Because NovaWear has no licence on file, the review uses two publicly available Monotype documents as **reference frameworks**. They show the kinds of conditions a commercial font licence may contain. They are not assumed to govern NovaWear.
+Because the fictional company has no licence on file, the review uses publicly available Monotype documents as reference frameworks to illustrate the kinds of conditions a commercial font licence may contain. They are not assumed to govern NovaWear.
 
-| Ref. | Document | Why it is used |
+| Reference | Document | Purpose |
 |---|---|---|
-| RF-A | Monotype License and Service Terms, Version 2.0 (monotype.com/terms-and-conditions) | Current subscription-style terms with separate grants for desktop, server, applications, web pages and digital marketing |
-| RF-B | Monotype Font Software End User License Agreement ("Monotype Single User License Agreement"), undated PDF hosted by Monotype | Older workstation-based model; Monotype's own glossary indicates its "Licensed Unit" concept now appears only in legacy licences |
+| RF-A | Monotype License and Service Terms, Version 2.0 | Reference for licence grants and potential differences between usage channels |
+| RF-B | Monotype Font Software End User License Agreement, also described as the Monotype Single User License Agreement | Reference for an older workstation-based licensing model |
 
-NovaWear's actual rights could instead come from a MyFonts purchase under a foundry's own EULA, a negotiated agreement, an agency's licence, a font bundled with other software, or an open licence. Identifying the governing document is the first open question (FND-04).
+The actual rights could instead arise from a MyFonts purchase under a foundry's EULA, a negotiated agreement, an agency licence, software bundling or an open licence. Identifying the applicable agreement is therefore a preliminary question.
 
-### Method
+**Research limitation:** Only sections 1 and 2 and the opening of section 3 of RF-A were retrieved and read. RF-B is undated, and its current status has not been confirmed. These limitations restrict the conclusions that can responsibly be drawn.
 
-Every use case is analysed under nine headings:
+## 5. Methodology
 
-| | Question |
-|---|---|
-| A | What is the business doing? |
-| B | Which rights or permitted uses may be relevant? |
-| C | Which verified licence provision, if any, is relevant? |
-| D | What facts and evidence are available? |
-| E | What evidence is missing? |
-| F | What can and cannot be concluded? |
-| G | What follow-up question should be asked? |
-| H | What practical remediation or compliance step may be appropriate? |
-| I | Low, medium or high review priority, and why? |
+Each hypothetical use case is assessed under nine headings:
 
-The priority scale and the distinction between a preliminary review and a completed audit are explained in [`docs/methodology.md`](docs/methodology.md).
+- **A — Activity:** What is the business doing?
+- **B — Relevant permissions:** Which rights or permitted uses may apply?
+- **C — Licence provision:** Which located provision, if any, is relevant?
+- **D — Available evidence:** What facts and documents are available?
+- **E — Evidence gaps:** What is missing?
+- **F — Assessment:** What can and cannot be concluded?
+- **G — Follow-up:** What should be clarified?
+- **H — Practical response:** What verification or remediation may be appropriate?
+- **I — Priority:** Is the issue low, medium or high priority, and why?
 
-## 5. Headline findings (illustrative)
+The distinction between a preliminary review and a completed audit is important. The project does not establish the company's actual licensing position.
 
-| ID | Channel | Issue | Priority |
+See [`docs/methodology.md`](docs/methodology.md) for the review framework.
+
+## 6. Illustrative Headline Findings
+
+| ID | Channel | Potential issue | Priority |
 |---|---|---|---|
-| FND-01 | Website | Self-hosted web font files apparently converted from desktop files; no web licence or page-view data located | High |
-| FND-02 | Mobile app | Font bundled in the app package; no application licence or user figures located | High |
-| FND-03 | Cloud storage | Font files in a shared folder open to anyone in the organisation with the link | High |
-| FND-04 | All channels | No executed licence, order form, invoice or installation inventory | High |
-| FND-05 | Email and HTML5 ads | Web font possibly delivered inside marketing emails and banners | Medium |
-| FND-06 | Agency | Font files sent to an external agency; agency's own licence position unknown | Medium |
-| FND-07 | Packaging and social | Script font of unknown provenance on commercially sold packaging | Medium |
-| FND-08 | Legal framework | Governing law of any licence and Indian protection of font files are unresolved | Medium |
-| FND-09 | Packaging and social | Printed and static outputs using the two brand fonts | Low |
-| FND-10 | Internal documents | Installation count and editable decks shared with partners | Low |
+| FND-01 | Website | Self-hosted web font files; web permissions and usage data not located | High |
+| FND-02 | Mobile app | Font bundled in the application; application licence and user figures not located | High |
+| FND-03 | Cloud storage | Font files in a shared folder; access and permitted distribution require verification | High |
+| FND-04 | All channels | No executed licence, order form, invoice or installation inventory available in the scenario | High |
+| FND-05 | Email and HTML5 ads | Potential font delivery in marketing materials requires verification | Medium |
+| FND-06 | Agency | Font files sent to an external agency; its licence position is unknown | Medium |
+| FND-07 | Packaging and social | Provenance of the fictional script font is unknown | Medium |
+| FND-08 | Legal framework | Governing law and protection of font software under Indian law remain unresolved | Medium |
+| FND-09 | Packaging and social | Printed and static outputs use the two brand fonts | Low |
+| FND-10 | Internal documents | Installation count and sharing of editable presentations require clarification | Low |
 
-None of these is a finding of infringement or of compliance. Each records a potential scope mismatch or documentation gap and the evidence needed to resolve it. Full reasoning is in [`docs/preliminary-audit-report.md`](docs/preliminary-audit-report.md).
+These are **illustrative review issues, not findings of infringement or compliance**. Priority labels are provisional and would need to be reassessed against the actual licence, evidence and circumstances.
 
-## 6. Key legal points
+See [`docs/preliminary-audit-report.md`](docs/preliminary-audit-report.md) for the detailed analysis.
 
-- **Scope, not ownership, is the usual question.** Both reference frameworks reserve all rights not expressly granted, so the analysis asks whether a particular act falls inside a particular grant.
-- **Indian law links licence scope to infringement.** Section 51(a) of the Copyright Act, 1957 treats as infringement an act done without a licence *or* in contravention of the conditions of a licence, but only where copyright subsists in the work.
-- **Whether copyright subsists is itself uncertain.** A font file may arguably qualify as a "computer programme" (s. 2(ffc), read with s. 2(o)), while the typeface design is commonly said by Indian commentators to fall outside the Copyright Act. No Indian judgment on font software was located. The answer affects whether a particular gap is a contractual matter, an infringement risk, or both.
-- **Output and distribution differ.** Printed packaging or a flat image reproduces letter shapes; a website, app or HTML email delivers the font file itself. That distinction drives most of the priority ratings.
+## 7. Key Legal Questions
 
-## 7. Limitations
+- **Licence scope:** Does the relevant agreement authorise the particular use, distribution method, number of users or volume of usage?
+- **Indian copyright law:** Section 51(a) of the Copyright Act, 1957 addresses acts done without a licence or in contravention of licence conditions, where copyright subsists in the relevant work. The applicability of this provision depends on the facts and legal status of the material involved.
+- **Font software and typeface design:** Whether a particular font file qualifies for copyright protection as a computer programme, and how the law applies to the underlying typeface design, require careful analysis. This project does not claim to resolve those questions.
+- **Digital delivery versus static output:** Delivering a font file through a website or application may raise different licence questions from using a font in a flattened image or printed design.
+- **Governing agreement:** The actual purchase documents, licence terms, applicable version and any negotiated conditions must be identified before reaching a reliable conclusion.
 
-- All facts about NovaWear are invented for illustration.
-- Only sections 1 and 2 (and the opening of section 3) of RF-A were retrieved and read; later sections, including reporting, audit, termination and governing law, were not reviewed.
-- RF-B is undated, and whether Monotype still issues it is unconfirmed.
-- No private licence, order form, invoice or account record was inspected.
+## 8. Limitations and Assumptions
+
+- NovaWear and its circumstances are fictional.
+- The review is based on limited reference-document research, not a complete examination of every relevant licence provision.
+- No private licence, order form, invoice, purchase record or account record was inspected.
+- RF-B is undated, and whether it is currently issued has not been confirmed.
 - No link-validation script was run; URLs were opened individually during research.
+- The analysis does not establish infringement, compliance, liability or a real company's licensing position.
 
-See [`docs/limitations-and-assumptions.md`](docs/limitations-and-assumptions.md).
+These limitations are part of the exercise: identifying what is unknown is an important part of responsible legal review.
 
-## 8. Ethical boundaries
+## 9. Ethical Boundaries
 
-- NovaWear is fictional. Its name was chosen for the exercise; any resemblance to a real business is unintended.
-- The fonts are labelled "Brand Sans", "Brand Display" and "Script Accent". They are labels for fictional typefaces, not real products.
+- NovaWear is fictional and was created for this exercise.
+- “Brand Sans”, “Brand Display” and “Script Accent” are labels for fictional typefaces, not identified commercial products.
 - No real company is accused of infringement or described as a Monotype customer.
-- Licence provisions are summarised and cited, not reproduced. Readers should rely on the original documents.
-- The project does not claim professional audit status or experience at any font company.
+- Third-party licence provisions are summarised rather than reproduced at length; readers should consult the original documents.
+- This is a student research project, not a professional audit or evidence of employment or engagement by a font company.
 
-## 9. Using the templates
+## 10. Using the Templates
 
-1. **Start with [`templates/licence-verification-checklist.md`](templates/licence-verification-checklist.md).** Work through it once the actual licence documents arrive; it replaces the reference frameworks with the real terms.
-2. **Fill [`templates/use-case-matrix.csv`](templates/use-case-matrix.csv)** with one row per channel. Keep columns A to I; they mirror the report.
-3. **Log every document in [`templates/evidence-register.csv`](templates/evidence-register.csv)** on receipt, with custodian, date, format and integrity record (see the evidence guide).
-4. **Record conclusions in [`templates/findings-register.csv`](templates/findings-register.csv).** Each finding should cite a use case, the provision relied on, and the evidence still missing.
-5. **Delete the illustrative rows** before using the templates for a real matter. Each illustrative row is marked `ILLUSTRATIVE` in the `data_status` column.
+1. **Licence verification:** Start with [`templates/licence-verification-checklist.md`](templates/licence-verification-checklist.md) when the actual licence documents are available.
+2. **Use-case mapping:** Complete [`templates/use-case-matrix.csv`](templates/use-case-matrix.csv), using one row per channel.
+3. **Evidence tracking:** Record documents received and requested in [`templates/evidence-register.csv`](templates/evidence-register.csv).
+4. **Findings tracking:** Use [`templates/findings-register.csv`](templates/findings-register.csv) to record issues, supporting material, priority and outstanding questions.
+5. **Before real-world use:** Remove illustrative data and validate the template against the actual matter, applicable law and licence documents.
 
-The CSVs use UTF-8, comma separators and double-quoted text fields, and open in Excel, Google Sheets or LibreOffice.
+The CSV files are intended to open in spreadsheet software such as Excel, Google Sheets or LibreOffice.
 
-## 10. Licence for this repository
+## 11. Licence for This Repository
 
-The author's original text and templates are released under CC BY 4.0 (see [`LICENSE`](LICENSE)). Third-party material referred to here, including Monotype's licence terms and statutory text, is not covered by that licence.
+The author's original text and templates are released under **Creative Commons Attribution 4.0 International (CC BY 4.0)**, subject to the terms of the included [`LICENSE`](LICENSE) file. Third-party material referred to in the project, including Monotype's licence terms and statutory text, is not covered by that licence.
